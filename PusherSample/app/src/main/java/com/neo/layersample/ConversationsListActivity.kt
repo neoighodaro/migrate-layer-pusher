@@ -14,7 +14,7 @@ class ConversationsListActivity : AppCompatActivity(), ConversionListAdapter.OnC
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_conversations_list)
 
-        val list = LayerSampleApp.instance.currentUser.rooms
+        val list = PusherSampleApp.instance.currentUser.rooms
         val conversationAdapter = ConversionListAdapter(this)
 
         conversationAdapter.setList(list)
@@ -28,7 +28,7 @@ class ConversationsListActivity : AppCompatActivity(), ConversionListAdapter.OnC
     }
 
     override fun conversationSelected(room: Room) {
-        LayerSampleApp.instance.room = room
+        PusherSampleApp.instance.room = room
         startActivity(Intent(this,ChatMessagesActivity::class.java))
     }
 

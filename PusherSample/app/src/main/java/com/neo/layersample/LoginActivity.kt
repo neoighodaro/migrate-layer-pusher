@@ -47,7 +47,7 @@ class LoginActivity : AppCompatActivity() {
                 when (result) {
                     is com.pusher.util.Result.Success -> {
                         // result.value
-                        LayerSampleApp.instance.currentUser = result.value
+                        PusherSampleApp.instance.currentUser = result.value
                         startActivity(Intent(this@LoginActivity, ConversationsListActivity::class.java))
                     }
 

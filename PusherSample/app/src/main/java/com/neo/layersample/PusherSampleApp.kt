@@ -4,7 +4,7 @@ import android.app.Application
 import com.pusher.chatkit.CurrentUser
 import com.pusher.chatkit.rooms.Room
 
-class LayerSampleApp : Application(){
+class PusherSampleApp : Application(){
 
     lateinit var currentUser: CurrentUser
     lateinit var room: Room
@@ -16,7 +16,7 @@ class LayerSampleApp : Application(){
     }
 
     companion object {
-        lateinit var instance:LayerSampleApp
+        lateinit var instance:PusherSampleApp
     }
 
 }
